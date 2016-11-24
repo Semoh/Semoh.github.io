@@ -13,8 +13,8 @@ html, body {
 }
 
 body {
-  background: #f9f9f9 url(../images/background.png) repeat;
-  background-attachment: scroll;
+  background: #f9f9f9 url(../images/background.png) no-repeat;
+  background-attachment: fixed;
   color: #303030;
   font-weight: 400;
   font-size: 13px;
