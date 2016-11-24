@@ -13,14 +13,14 @@ html, body {
 }
 
 body {
-  background: #f9f9f9 url(../images/background.png) no-repeat;
+  background: #f9f9f9 url(../images/background.png) repeat;
   background-attachment: fixed;
   color: #303030;
   font-weight: 400;
-  font-size: 13px;
-  line-height: 400px;
+  font-size: 300px;
+  line-height: 19px;
   padding: 0;
-  margin: auto; 
+  margin: 0; 
 }
 
 #go-back-home {
