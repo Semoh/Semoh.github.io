@@ -100,19 +100,19 @@
 						<div class='date'>29 Nov 2016</div>
 					</h1>
 					
-<p>XAMPP &nbsp 对初学者的友好性是公认的，下面就是对 &nbsp CentOS7 &nbsp + &nbsp XAMPP(PHP7.0.13) &nbsp 的尝试。</p>			
+<p>XAMPP 对初学者的友好性是公认的，下面就是对 CentOS7 + XAMPP(PHP7.0.13) 的尝试。</p>			
 
 <p>从网站上直接下载XAMPP的速度真是。。。</p>
 <p>于是改成了终端下载</p>
 <blockquote>
-<p>wget &nbsp https://sourceforge.net/projects/xampp/files/xampp-linux-x64-7.0.13-0-installer.run</p>
+<p>wget https://sourceforge.net/projects/xampp/files/xampp-linux-x64-7.0.13-0-installer.run</p>
 </blockquote>
 <p>版本根据需要下载。</p>
 
 <p>接下来安装，需要切换到超级用户（许多相关操作都需要root权限，这也是CentOS安装某些东西时比较坑懒人的一点）</p>
 <blockquote>
 <p>su<p>
-<p>chmod &nbsp -R &nbsp xampp-linux-x64-7.0.13-0-installer.run</p>
+<p>chmod -R xampp-linux-x64-7.0.13-0-installer.run</p>
 <p>./xampp-linux-x64-7.0.13-0-installer.run</p>
 </blockquote>
 <p>安装过程就省略了，需要教程可以直接找度娘。xampp默认安装在/opt/lampp下。
@@ -132,7 +132,7 @@
 <p>mysql（用户名root）</p>
 <p>ftp（用户名daemon）</p>
 
-<p>在浏览器中输入 &nbsp http://localhost/ &nbsp，能成功访问就不需要戳度娘找问题所在了。
+<p>在浏览器中输入 http://localhost/ ，能成功访问就不需要戳度娘找问题所在了。
 <p>网站文件默认放在/opt/lampp/htdocs下，接下来尝试在本地搭建Sqli-labs练习平台。</p>
 
 <p>下载好Sqli-labs文件，放到/opt/lampp/htdocs文件夹下</p>
@@ -141,16 +141,16 @@
 <p>在浏览器中输入 &nbsp http://localhost/(文件名) &nbsp </p>
 <p>点击 &nbsp <font color="pink">Setup/reset &nbsp Database &nbsp for &nbsp labs</font></p>
 
-<p>却显示 &nbsp 29 &nbsp Stack &nbsp trace: &nbsp #0 &nbsp {main} &nbsp thrown &nbsp in &nbsp /opt/lampp/htdocs/sqli-labs/sql-connections/setup-db.php &nbsp on &nbsp line &nbsp 29</p>
+<p>却显示 29 Stack trace: #0 {main} thrown in /opt/lampp/htdocs/sqli-labs/sql-connections/setup-db.php on line 29</p>
 <p>百度上描述相关问题的资料可谓凤毛麟角。。。</p>
 
-<hr>
+<hr />
 
 <p>关于PHP7.0的新特性</p>
 <p>extension=<font color="red">php_mysqli.dll</font> &nbsp 替代了之前的 &nbsp <font color="red">extension=php_mysql.dll</font></p>
-<div dir="rtl">详情戳<a href="http://blog.csdn.net/qiuling007/article/details/51417048?locationNum=1&fps=1">http://blog.csdn.net/qiuling007/article/details/51417048?locationNum=1&fps=1</a><div>
+<p>详情戳<a href="http://blog.csdn.net/qiuling007/article/details/51417048?locationNum=1&fps=1">http://blog.csdn.net/qiuling007/article/details/51417048?locationNum=1&fps=1</a></p>
 
-<hr>
+<hr />
 
 <p>学习无界限，官方资料还是不能忽视的（即使是英文版。。。。）</p>
 <p>使用新版本则更需要关注官方消息<a href="http://php.net/">http://php.net/</a></p>
