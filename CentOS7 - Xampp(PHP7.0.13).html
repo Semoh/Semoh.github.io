@@ -1,0 +1,229 @@
+<html>
+	<head>
+	<title>CentOS7 - Xampp(PHP7.0.13) - Semoh</title>
+	<meta content='width=device-width, initial-scale=1.0, user-scalable=no' name='viewport'>
+<meta content='text/html; charset=utf-8' http-equiv='content-type' />
+  
+  
+
+<link href='/images/fav.png' rel='shortcut icon'>
+<link href='/stylesheets/style.css' rel='stylesheet' type='text/css' />
+<link href='/stylesheets/syntax.css' rel='stylesheet' type='text/css' />
+<link href='/stylesheets/responsive.css' rel='stylesheet' type='text/css' />
+<link href="/stylesheets/nprogress.css" rel='stylesheet' type='text/css' />
+<link href="/stylesheets/duoshuo.css" rel='stylesheet' type='text/css' />
+
+<link href="/feed.xml" rel="alternate" type="application/rss+xml">
+
+<script src='/javascripts/jquery.js' type='text/javascript'></script>
+<script src='/javascripts/jquery.particleground.min.js' type='text/javascript'></script>
+<script src='/javascripts/nprogress.js' type='text/javascript'></script>
+<script src='/javascripts/theater.js' type='text/javascript'></script>
+
+<script src='/javascripts/app.js' type='text/javascript'></script>
+<script>var duoshuoQuery = {short_name:"Semoh"};</script>
+
+	</head>
+	<body>
+
+		<header>
+<a id="go-back-home" href="/"><img src="/images/scribble.png" alt="Home" width="53" height="59"></a>
+<p>Semoh</p>
+
+<div id="blog-desc">
+    Do have faith in what you're doing.
+</div>
+
+</header>
+
+
+		<div id='container'>
+			
+			<div class="block nav">
+    <ul>
+    
+        <li>
+            <span class="line line-top"></span>
+            <span class="line line-right"></span>
+            <span class="line line-bottom"></span>
+            <span class="line line-left"></span>
+            <a target="_top" href="/about.html">About</a>
+        </li>
+    
+        <li>
+            <span class="line line-top"></span>
+            <span class="line line-right"></span>
+            <span class="line line-bottom"></span>
+            <span class="line line-left"></span>
+            <a target="_top" href="/">Blog</a>
+        </li>
+    
+        <li>
+            <span class="line line-top"></span>
+            <span class="line line-right"></span>
+            <span class="line line-bottom"></span>
+            <span class="line line-left"></span>
+            <a target="_top" href="/feed.xml">Feed</a>
+        </li>
+    
+        <li>
+            <span class="line line-top"></span>
+            <span class="line line-right"></span>
+            <span class="line line-bottom"></span>
+            <span class="line line-left"></span>
+            <a target="_blank" href="https://github.com/Semoh">GitHub</a>
+        </li>
+        
+    </ul>
+
+</div>
+
+
+			<section class="paging">
+  
+    
+  
+  
+    <div class="left">
+      <a href="/Genesis.html/">
+        ›
+      </a>
+    </div>
+  
+</section>
+
+
+			<div class="content">
+				<section class='post'>
+					<h1>
+						CentOS7 - XAMPP+PHP7.0.13
+						<div class='date'>29 Nov 2016</div>
+					</h1>
+					
+<p>XAMPP &nbsp 对初学者的友好性是公认的，下面就是对 &nbsp CentOS7 &nbsp + &nbsp XAMPP(PHP7.0.13) &nbsp 的尝试。</p>			
+
+<p>从网站上直接下载XAMPP的速度真是。。。</p>
+<p>于是改成了终端下载</p>
+<blockquote>
+<p>wget &nbsp https://sourceforge.net/projects/xampp/files/xampp-linux-x64-7.0.13-0-installer.run</p>
+</blockquote>
+<p>版本根据需要下载。</p>
+
+<p>接下来安装，需要切换到超级用户（许多相关操作都需要root权限，这也是CentOS安装某些东西时比较坑懒人的一点）</p>
+<blockquote>
+<p>su<p>
+<p>chmod &nbsp -R &nbsp xampp-linux-x64-7.0.13-0-installer.run</p>
+<p>./xampp-linux-x64-7.0.13-0-installer.run</p>
+</blockquote>
+<p>安装过程就省略了，需要教程可以直接找度娘。xampp默认安装在/opt/lampp下。
+
+<p>安装完毕，需要手动运行xampp服务</p>
+<blockquote>
+<p>/opt/lampp/lampp &nbsp start</p>
+</blockquote>
+
+<p>初始密码默认为空，下面进行设置</p>
+<blockquote>
+<p>/opt/lampp/lampp &nbsp security</p>
+</blockquote>
+<p>接下来根据提示依次设置密码</p>
+<p>xampp（用户名xampp）</p>
+<p>phpmyadmin（用户名pma）</p>
+<p>mysql（用户名root）</p>
+<p>ftp（用户名daemon）</p>
+
+<p>在浏览器中输入 &nbsp http://localhost/ &nbsp，能成功访问就不需要戳度娘找问题所在了。
+<p>网站文件默认放在/opt/lampp/htdocs下，接下来尝试在本地搭建Sqli-labs练习平台。</p>
+
+<p>下载好Sqli-labs文件，放到/opt/lampp/htdocs文件夹下</p>
+<p>将sql-connections文件夹中db-creds.inc文件的用户名和密码设置为mysql的用户名和密码。</p>
+
+<p>在浏览器中输入 &nbsp http://localhost/(文件名) &nbsp </p>
+<p>点击 &nbsp <font color="pink">Setup/reset &nbsp Database &nbsp for &nbsp labs</font></p>
+
+<p>却显示 &nbsp 29 &nbsp Stack &nbsp trace: &nbsp #0 &nbsp {main} &nbsp thrown &nbsp in &nbsp /opt/lampp/htdocs/sqli-labs/sql-connections/setup-db.php &nbsp on &nbsp line &nbsp 29</p>
+<p>百度上描述相关问题的资料可谓凤毛麟角。。。</p>
+
+<hr>
+
+<p>关于PHP7.0的新特性</p>
+<p>extension=<font color="red">php_mysqli.dll</font> &nbsp 替代了之前的 &nbsp <font color="red">extension=php_mysql.dll</font></p>
+<div dir="rtl">详情戳<a href="http://blog.csdn.net/qiuling007/article/details/51417048?locationNum=1&fps=1">http://blog.csdn.net/qiuling007/article/details/51417048?locationNum=1&fps=1</a><div>
+
+<hr>
+
+<p>学习无界限，官方资料还是不能忽视的（即使是英文版。。。。）</p>
+<p>使用新版本则更需要关注官方消息<a href="http://php.net/">http://php.net/</a></p>
+	
+
+	
+	<p>学习无止境，我们皆在路上</p>	
+				
+				</section>
+			</div>
+
+			
+				<!-- 多说评论框 start -->
+<div class="block ds-thread" data-title="Genesis" data-url="http://Semoh.github.io/Genesis/"></div>
+<!-- 多说评论框 end -->
+			
+
+		</div>
+
+		<script>
+
+            jQuery(document).ready(function($) {
+
+                App.mapKeySupport();
+
+                App.initNProgress();
+
+                App.initDuoshuo();
+
+                App.initTheater();
+            });
+
+		</script>
+
+	</body>
+
+	<div id="particles">
+    <canvas class="pg-canvas"></canvas>
+</div>
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?93757bc26a1b57b9c6a7771db256d254";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+
+    $(function(){
+
+        var $body = $("body");
+
+        $("#particles").css({
+                "width":$body.width(), 
+                "height":$body.height()
+            }).particleground({
+                lineColor: '#e0e0e0',
+                dotColor: '#EFEFEF',
+                lineColor: '#EFEFEF',   
+                minSpeedX :0.5,
+                maxSpeedX :1,
+                minSpeedY : 0.5,
+                maxSpeedY :1
+            });
+    });
+</script>
+<footer>
+  <span class="muted">© Semoh. All Rights Reserved.</span><br>
+  <a href="http://github.com/Semoh" class="muted">built with Jekyll using Scribble theme</a>
+  <br>
+  <br>
+  <!--img src="/images/scribble2.png" alt="scribble" /-->
+</footer>
+
+
+</html>
