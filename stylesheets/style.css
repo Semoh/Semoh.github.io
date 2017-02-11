@@ -23,24 +23,7 @@ body {
   margin: 0; 
 }
 
-element.style {
-    transition: left 0.3s ease 0s;
-    position: fixed;
-    bottom: 33px;
-    left: -66px;
-    z-index: 9999;
-}
-.PCD_mplayer {
-    position: absolute;
-    font-family: "Microsoft Yahei";
-    font-size: 12px;
-}
-.clearfix {
-    display: block;
-}
-.clearfix {
-    display: inline-block;
-}
+
 
 #go-back-home {
   margin: 40px 0 0; 
