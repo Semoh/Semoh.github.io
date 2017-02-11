@@ -126,7 +126,152 @@
 </script>
 
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=22706993&auto=1&height=66"></iframe>
+<div i-am-music-player="" node-type="box">
+<div class="PCD_mplayer_layer" style="position:fixed;bottom:90px;;left:30px;display:none;" node-type="confirm">
+    <div class="content">
+        <p class="main_txt"><span class="txt">确认要隐藏播放器吗？</span></p>
+        <p class="sub_txt S_txt2">隐藏后点击页面任意播放按钮即可再次出现</p>
+        <div class="btn">
+            <a href="javascript:void(0);" action-type="hide" class="btn_a" suda-data="key=tblog_musicpageplayer&amp;value=click_close">确认</a>
+            <a href="javascript:void(0);" action-type="hide_confirm" class="btn_b">取消</a>
+        </div>
+        <div class="layer_arrow"><span class="arrow_bor arrow_bor_b"><i class="arrow_a"></i><em class="arrow_b"></em></span></div>
+    </div>
+</div>
+<div class="PCD_mplayer clearfix" node-type="mini" style="transition: left 0.3s ease 0s; position: fixed; bottom: 33px; left: -66px; z-index: 9999;">
+    <div class="mini clearfix">
+        <div class="mini_panel_area">
+            <a href="javascript:void(0)" class="mini_btn_area playing_state" node-type="mini_toggle_play" action-type="toggle_play">
+                <i class="ico_ctrl ico_mini_state"></i>
+                <span class="mask"></span>
+                <img node-type="mini_photo" src="http://mu1.sinaimg.cn/square.180/weiyinyue.music.sina.com.cn/wpp_cover/59349117.jpg" class="pic">
+            </a>
+        </div>
+        <a href="javascript:void(0)" class="mini_fold_ctrl_area" action-type="toggle_fold">
+            <i class="ico_ctrl ico_unfold"></i>
+        </a>
+        <a href="javascript:void(0);" action-type="show_confirm" class="ico_ctrl ico_close" title="关闭"></a>
+    </div>
+</div>
+<div class="PCD_mplayer PCD_mplayer_v2 clearfix" node-type="player" style="transition: left 0.5s ease 0.3s; position: fixed; bottom: 20px; left: 0px; z-index: 9999;">
+    <div class="player_bg" node-type="">
+        <div class="panel_area " node-type="list" style="display: none;">
+    <div class="title_box">
+        <div class="opt_btn">
+            <a action-type="toggle_list" href="javascript:void(0);" class="ico_ctrl ico_close" title="关闭"></a>
+        </div>
+        <ul class="ul_title" node-type="songTitles"><li class="li_title autocut" style="max-width:140px;" action-type="list_tab"><a href="javascript:void(0);" class="title_item ">
+	<span class="title">播放列表</span>
+	<span class="ani_border"></span>
+</a></li><li class="li_title autocut" style="max-width:140px;" action-type="list_tab"><a href="javascript:void(0);" class="title_item">
+	<span class="title">亚洲新歌榜</span>
+	<span class="ani_border"></span>
+</a></li></ul>
+        <div class="opt_box">
+            <div class="search_box">
+                <input node-type="searchinput" type="text" class="ipt_txt" placeholder="搜索歌曲/歌手">
+                <a href="javascript:void(0)" action-type="list_searchBtn" class="search_btn"><i class="ico_mplayer ico_search"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="list_area">
+        <div node-type="songlists" style="height: 250px; width: 2055px; position: relative; left: -1370px; transition: left 0.3s ease;">
+            <div node-type="list_box" list="rank" style="height:100%;width:685px;float:left;overflow:hidden;position:relative;"><p class="p_item" node-type="list_bar"><span class="music_del">正在播放 （<span class="nowplay">1/1</span>）</span><span class="music_del music_del_hov" action-type="list_removeAll"><span class="ico_ctrl ico_del_lite_v2"></span>清空列表</span></p><div style="overflow:hidden;width:100%;height:100%;position:relative;_background:url(about:blank);"><div style="position: relative; height: 100%; width: 702px; overflow-y: scroll; overflow-x: hidden; margin-right: -30px; padding-right: 30px;">
+    
+    <div class="list_wrap" style="width:685px;height:auto;">
+        <div class="list_box">
+            <ul class="ul_list" node-type="list_area"><li class="li_item current" node-type="list_item" objectid="1022:10151501_59349117" action-type="list_select">    <span class="music_name">雪野原</span>    <span class="singer_name">                    <span>Key Sounds Label</span>                    </span>    <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_59349117" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_del_lite" action-type="list_remove"></a>    </span></li></ul>
+        </div>
+    </div>
+</div></div><div class="scroll_box" style="bottom: 10px; visibility: hidden;"><div class="scroll_bar" style="top: 0%; height: 100%;"></div></div></div><div node-type="list_box" list="rank" style="height:100%;width:685px;float:left;overflow:hidden;position:relative;"><p class="p_item" node-type="list_bar"><span class="music_del">共19首</span><span class="music_del music_del_hov" action-type="list_selectAll"><span class="ico_ctrl ico_rig_ht W_f14"></span>全部播放</span></p><div style="overflow:hidden;width:100%;height:100%;position:relative;_background:url(about:blank);"><div style="position: relative; height: 100%; width: 117px; overflow-y: scroll; overflow-x: hidden; margin-right: -30px; padding-right: 30px;">
+    
+    <div class="list_wrap" style="width:685px;height:auto;">
+        <div class="list_box">
+            <ul class="ul_list" node-type="list_area"><li class="li_item" node-type="list_item" objectid="1022:10151501_61741498" action-type="list_select">    <span class="music_name">小棉袄</span>    <span class="singer_name">                    <span>TFBOYS-王俊凯</span>                    </span>        <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_61741498" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li><li class="li_item" node-type="list_item" objectid="1022:10151501_100392404" action-type="list_select">    <span class="music_name">萤火-TFBOYS组合</span>    <span class="singer_name">                    <span>TFBOYS组合</span>                    </span>        <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_100392404" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li><li class="li_item" node-type="list_item" objectid="1022:10151501_100392835" action-type="list_select">    <span class="music_name">当你远行（网络剧《学院传说之三生三世桃花缘》片尾曲）</span>    <span class="singer_name">                    <span>陈秋实_Chambers</span>                    <span>蔡照CAY-Z</span>                    </span>        <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_100392835" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li><li class="li_item" node-type="list_item" objectid="1022:10151501_61826522" action-type="list_select">    <span class="music_name">很奇怪我爱你(歌手)</span>    <span class="singer_name">                    <span>张杰</span>                           <a href="http://weibo.com/p/10151501_61826522/buy" target="_blank" action-type="list_buy" class="ico_mplayer ico_pay">购买</a>           </span>        <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_61826522" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li><li class="li_item" node-type="list_item" objectid="1022:10151501_61479347" action-type="list_select">    <span class="music_name">张士超你到底把我家钥匙放在哪里了-杨宗纬</span>    <span class="singer_name">                    <span>杨宗纬</span>                    </span>        <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_61479347" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li><li class="li_item" node-type="list_item" objectid="1022:10151501_61827108" action-type="list_select">    <span class="music_name">成都(歌手)</span>    <span class="singer_name">                    <span>赵雷</span>                           <a href="http://weibo.com/p/10151501_61827108/buy" target="_blank" action-type="list_buy" class="ico_mplayer ico_pay">购买</a>           </span>        <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_61827108" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li><li class="li_item" node-type="list_item" objectid="1022:10151501_61734543" action-type="list_select">    <span class="music_name">放火-王金金</span>    <span class="singer_name">                    <span>王金金</span>                    </span>        <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_61734543" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li><li class="li_item" node-type="list_item" objectid="1022:10151501_100393251" action-type="list_select">    <span class="music_name">思念飞花（网剧《愉此一生》片尾曲）</span>    <span class="singer_name">                    <span>晏紫东</span>                    </span>        <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_100393251" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li><li class="li_item" node-type="list_item" objectid="1022:10151501_100390604" action-type="list_select">    <span class="music_name">舍不得</span>    <span class="singer_name">                    <span>Dear-迪丽热巴</span>                    </span>        <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_100390604" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li><li class="li_item" node-type="list_item" objectid="1022:10151501_61825036" action-type="list_select">    <span class="music_name">别送我（电影《乘风破浪》插曲）</span>    <span class="singer_name">                    <span>陈鸿宇</span>                    <span>苏紫旭是草履虫</span>                    <span>刘昊霖HL</span>                    </span>        <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_61825036" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li><li class="li_item" node-type="list_item" objectid="1022:10151501_100392957" action-type="list_select">    <span class="music_name">为你成全（电视剧《大唐荣耀》插曲）</span>    <span class="singer_name">                    <span>万茜</span>                    <span>音频怪物</span>                    </span>        <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_100392957" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li><li class="li_item" node-type="list_item" objectid="1022:10151501_100390707" action-type="list_select">    <span class="music_name">复杂人生</span>    <span class="singer_name">                    <span>魏晨</span>                    </span>        <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_100390707" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li><li class="li_item" node-type="list_item" objectid="1022:10151501_61788033" action-type="list_select">    <span class="music_name">带上月光上路(央视2017年中央电视台春节联欢晚会)</span>    <span class="singer_name">                    <span>馬天宇</span>                    <span>关晓彤</span>                    <span>王嘉Jevon</span>                           <a href="http://weibo.com/p/10151501_61788033/buy" target="_blank" action-type="list_buy" class="ico_mplayer ico_pay">购买</a>           </span>        <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_61788033" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li><li class="li_item" node-type="list_item" objectid="1022:10151501_100390805" action-type="list_select">    <span class="music_name">荣耀（电视剧《大唐荣耀》主题曲）</span>    <span class="singer_name">                    <span>任嘉伦Allen</span>                    </span>        <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_100390805" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li><li class="li_item" node-type="list_item" objectid="1022:10151501_56567248" action-type="list_select">    <span class="music_name">耀·出色-乔任梁</span>    <span class="singer_name">                    <span>乔任梁</span>                           <a href="http://weibo.com/p/10151501_56567248/buy" target="_blank" action-type="list_buy" class="ico_mplayer ico_pay">购买</a>           </span>        <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_56567248" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li><li class="li_item" node-type="list_item" objectid="1022:10151501_61716446" action-type="list_select">    <span class="music_name">花开树下(学院传说之三生三世桃花缘推广曲)</span>    <span class="singer_name">                    <span>汪东城</span>                           <a href="http://weibo.com/p/10151501_61716446/buy" target="_blank" action-type="list_buy" class="ico_mplayer ico_pay">购买</a>           </span>        <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_61716446" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li><li class="li_item" node-type="list_item" objectid="1022:10151501_59471270" action-type="list_select">    <span class="music_name">我们都不坏-乔任梁</span>    <span class="singer_name">                    <span>乔任梁</span>                           <a href="http://weibo.com/p/10151501_59471270/buy" target="_blank" action-type="list_buy" class="ico_mplayer ico_pay">购买</a>           </span>        <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_59471270" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li><li class="li_item" node-type="list_item" objectid="1022:10151501_61736678" action-type="list_select">    <span class="music_name">春节自救指南</span>    <span class="singer_name">                    <span>上海彩虹室内合唱团</span>                    </span>        <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_61736678" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li><li class="li_item" node-type="list_item" objectid="1022:10151501_61823531" action-type="list_select">    <span class="music_name">丑八怪 / 演员 (Live)</span>    <span class="singer_name">                    <span>薛之谦</span>                    </span>        <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_61823531" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li></ul>
+        </div>
+    </div>
+</div></div><div class="scroll_box" style="bottom: 10px; visibility: hidden;"><div class="scroll_bar" style="top:0%; height:0;"></div></div></div><div node-type="list_search_box" style="height:100%;width:685px;float:left;overflow:hidden;position:relative;"><p class="p_item" node-type="list_search_bar"><span class="music_del">共5首</span><span class="music_del music_del_hov" action-type="list_selectAll"><span class="ico_ctrl ico_rig_ht W_f14"></span>全部播放</span></p><div style="overflow:hidden;width:100%;height:100%;position:relative;_background:url(about:blank);"><div style="position: relative; height: 100%; width: 702px; overflow-y: scroll; overflow-x: hidden; margin-right: -30px; padding-right: 30px;">
+                <div class="list_wrap" style="width:685px;height:auto;">
+                    
+                    <div class="list_box">
+                        <ul class="ul_list" node-type="list_search_area"><li class="li_item" node-type="list_item" objectid="1022:10151501_60975688" action-type="list_select">    <span class="music_name">雪野原-睡前♬音乐</span>    <span class="singer_name">                    <span>睡前♬音乐</span>                    </span>    <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_60975688" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li><li class="li_item" node-type="list_item" objectid="1022:10151501_59349117" action-type="list_select">    <span class="music_name">雪野原</span>    <span class="singer_name">                    <span>Key Sounds Label</span>                    </span>    <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_59349117" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li><li class="li_item" node-type="list_item" objectid="1022:10151501_57056278" action-type="list_select">    <span class="music_name">雪野原 津軽海峡猛吹雪野原mix</span>    <span class="singer_name">                    <span>稜樂會</span>                    </span>    <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_57056278" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li><li class="li_item" node-type="list_item" objectid="1022:10151501_55273837" action-type="list_select">    <span class="music_name">雪野原-Golden City Factory</span>    <span class="singer_name">                    <span>Golden City Factory</span>                    </span>    <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_55273837" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li><li class="li_item" node-type="list_item" objectid="1022:10151501_54243641" action-type="list_select">    <span class="music_name">雪野原鞠愛のテーマ</span>    <span class="singer_name">                    <span>N's</span>                    </span>    <span class="opt_box">        <a href="javascript:void(0);" action-type="list_like" likeid="1022:10151501_54243641" class="ico_ctrl ico_like_lite"></a>        <a href="javascript:void(0);" class="ico_ctrl ico_share_lite" action-type="list_share"></a>    </span></li></ul>
+                    </div>
+                    <div class="empty_box" node-type="list_search_area_loading" style="display: none;">
+                        <div style="height:30px;"></div>
+                        <p class="text" node-type="list_search_area_empty_text">努力搜索中, 请稍后...</p>
+                    </div>
+                    <div class="empty_box" node-type="list_search_area_empty" style="display:none">
+                        <i class="ico_ctrl ico_list_warn"></i>
+                        <p class="text" node-type="list_search_area_empty_text">对不起，没有找到相应结果。</p>
+                    </div>
+                </div>
+            </div></div><div class="scroll_box" style="bottom: 10px; visibility: hidden;"><div class="scroll_bar" style="top: 0%; height: 100%;"></div></div></div>
+        </div>
+    </div>
+</div>
+        <div class="unfold_area">
+            <div class="unfold_bg">
+                <div class="time_wrap">
+                    <div class="time_bar" node-type="progress_range_out">
+                        <div class="cur_time_bg" style="width: 6.24486%;" node-type="progress_range">
+                            <a class="cur_time" href="javascript:void(0);" title="进度"></a>
+                        </div>
+                    </div>
+                    <div class="time_count tcol_sub" node-type="time">04 : 51</div>
+                    <div class="layer_time" style="top: -20px; left: 480px; z-index: 1; pointer-events: none; display: none;" node-type="time_tip">
+                        <div class="content">
+                            <i class="ico_ctrl ico_time_arrow"></i>
+                            <span node-type="time_tip_text">03 : 32</span>
+                        </div>
+                    </div>
+                 </div>
+                <div class="main_panel clearfix">
+                    <div node-type="info" class="music_info"><!--temp start--><div class="music_pic"><a target="_blank" href="http://weibo.com/p/10151501_59349117?from=page_101515_player&amp;source_id=1090" title="雪野原" class="pic"><img src="http://mu1.sinaimg.cn/square.180/weiyinyue.music.sina.com.cn/wpp_cover/59349117.jpg"></a></div><div class="music_detail">    <p class="name_bar">        <a target="_blank" class="name autocut" href="http://weibo.com/p/10151501_59349117?from=page_101515_player&amp;source_id=1090" title="雪野原">雪野原</a>    </p>    <p class="author_bar autocut">                <span class="author tcol_sub" title="Key Sounds Label">Key Sounds Label</span>            </p>        <p class="source_bar autocut">    <em class="tcol_sub">来自</em><a suda-data="key=tblog_musicpageplayer&amp;value=source" target="_blank" href="http://music.163.com" class="source">网易云音乐</a>    </p>    </div><!--temp end--></div>
+                    <div class="contrl_panel">
+                        <p class="layer_loop" style="display:none;" node-type="play_type_select">
+                                <a href="javascript:void(0);" title="随机播放" class="ico_ctrl ico_rand" node-type="play_type_select_rand" action-type="play_type_select"></a>
+                                <a href="javascript:void(0);" title="单曲循环" class="ico_ctrl ico_solo" node-type="play_type_select_solo" action-type="play_type_select"></a>
+                                <a href="javascript:void(0);" title="列表循环" class="ico_ctrl ico_loop" node-type="play_type_select_loop" action-type="play_type_select"></a>
+                            </p>
+                        <div class="contrl_bar clearfix">   
+                            <div class="base_ctrl">
+                                <a href="javascript:void(0);" class="ico_ctrl ico_prev" action-type="prev" title="上一首"></a>
+                                <a href="javascript:void(0);" class="ico_ctrl ico_play ico_pause" node-type="toggle_play" action-type="toggle_play" title="暂停"></a>
+                                <a href="javascript:void(0);" class="ico_ctrl ico_next" action-type="next" title="下一首"></a>
+                                <a href="javascript:void(0);" class="ico_ctrl ico_loop" node-type="play_type" action-type="play_type" title="列表循环"></a>
+                            </div>
+                            <div class="vol_ctrl">
+                                <a href="javascript:void(0);" class="ico_ctrl ico_vol" title="音量" action-type="toggle_mute" node-type="toggle_mute"></a>
+                                <div class="ctrl_bar" node-type="volume_range_out">
+                                    <div class="cur_vol cur_volmute" style="width: 90%;" node-type="volume_range">
+                                        <a href="javascript:void(0);" class="ico_ctrl ico_curvol" title="音量调节"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="opt_ctrl clearfix">
+                                <a href="javascript:void(0);" class="ico_ctrl ico_like" action-type="like" node-type="like" title="赞"></a>
+                                <a href="javascript:void(0);" class="ico_ctrl ico_share" action-type="share" title="分享"></a>
+                                <a href="javascript:void(0);" class="ico_ctrl ico_list" node-type="toggle_list" title="展开列表" action-type="toggle_list"></a>
+                                <a href="javascript:void(0);" class="ico_lyric ico_lyric_open" node-type="toggle_lrc" action-type="toggle_lrc" title="显示歌词">词</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fold_ctrl_area" title="展开" action-type="toggle_fold" node-type="toggle_fold"><div class="mask"><a href="javascript:void(0);" class="ico_ctrl ico_unfold ico_fold"></a></div></div>
+        <div class="lyric_wrap" node-type="lrc" style="display:none">
+    <div class="lyric_bg">
+        <a href="javascript:void(0);" class="ico_ctrl ico_close" title="关闭" action-type="toggle_lrc"></a>
+        <div class="content" style="cursor: pointer;">
+            <div class="tcol_sub" node-type="lrc_content" style="margin-top: 15px; transition: none;"><p class=" cur_word">抱歉，暂无歌词</p></div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+<iframe src="http://ting.weibo.com/public/js/jsproxy.html" style="width: 0px; height: 0px; border: 0px; opacity: 0; position: absolute; top: -10px; left: -10px;"></iframe></div>
+
 <footer>
   <span class="muted">© Semoh. All Rights Reserved.</span><br>
   <a href="http://github.com/chloerei/scribble" class="muted">built with Jekyll using Scribble theme</a>
