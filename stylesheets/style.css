@@ -13,7 +13,8 @@ html, body {
 }
 
 body {
-  background: #f9f9f9 url(../images/background.png) repeat;
+  background: #f9f9f9 url(../images/background.png);
+  backgroun-size:cover;
   background-attachment: fixed;
   color: #303030;
   font-weight: 400;
