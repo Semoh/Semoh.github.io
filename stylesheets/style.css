@@ -16,6 +16,7 @@ body {
   background: #f9f9f9 url(../images/background.png);
   background-size:cover;
   background-attachment: fixed;
+  background-position:50% 50%;
   color: #303030;
   font-weight: 400;
   font-size: 13px;
